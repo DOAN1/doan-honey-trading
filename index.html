@@ -3,29 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DOAN HONEY TRADING - أفضل أنواع العسل من دوعن">
     <title>DOAN HONEY TRADING</title>
     <style>
         body {
-            background-image: url('C:/Users/HP/Pictures/عسل.jpg'); /* مسار الصورة المحلي */
-            background-size: cover; /* لتغطية كامل الصفحة */
-            background-position: center; /* لتوسيط الخلفية */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #f8b400;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            max-width: 150px;
+        }
+        .products {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            text-align: center;
+            border-radius: 8px;
+            transition: transform 0.2s ease-in-out;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .contact {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .contact a {
+            color: #f8b400;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <section>
-        <div class="contact">
-            <h3>تواصل معنا</h3>
-            <p>رقم الهاتف: 971+50-1234567</p>
-            <p>موقع المحل: <a href="https://www.google.com/maps/place/your_location">موقعنا على الخريطة</a></p>
-            <p>تابعنا على:</p>
-            <a href="https://www.facebook.com/profile.php?id=100076436856582">فيسبوك</a><br>
-            <a href="https://www.instagram.com/doan._honey/profilecard/?igsh=aDh5cXc4bWxmOHkz">إنستقرام</a>
-        </div>
-    </section>
 
-    <footer>
-        <p>&copy; 2024 DOAN HONEY TRADING - جميع الحقوق محفوظة</p>
-    </footer>
+<header>
+    <h1>DOAN HONEY TRADING</h1>
+    <p>أفضل أنواع العسل الطبيعي من دوعن</p>
+    <img src="C:/Users/HP/Pictures/عسل.jpg" alt="صورة العسل">
+</header>
+
+<section class="products">
+    <div class="product">
+        <img src="product1.jpg" alt="عسل سدر">
+        <h2>عسل سدر</h2>
+        <p>العسل الطبيعي الخالص من جبال دوعن.</p>
+        <p>السعر: $50</p>
+    </div>
+    <div class="product">
+        <img src="product2.jpg" alt="عسل سمرة">
+        <h2>عسل سمرة</h2>
+        <p>العسل الطبيعي الممتاز من أجود المناطق.</p>
+        <p>السعر: $40</p>
+    </div>
+</section>
+
+<div class="contact">
+    <h3>تواصل معنا</h3>
+    <p>رقم الهاتف: +971-50-1234567</p>
+    <p>موقع المحل: <a href="https://www.google.com/maps/place/your-location-link" target="_blank" rel="noopener noreferrer">اضغط هنا لرؤية الموقع</a></p>
+    <p>تابعنا على:</p>
+    <a href="https://www.facebook.com/profile.php?id=100076436856582&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.instagram.com/doan._honey/profilecard/?igsh=aDh5cXc4bWxmOHkz" target="_blank" rel="noopener noreferrer">Instagram</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 DOAN HONEY TRADING - جميع الحقوق محفوظة</p>
+</footer>
+
 </body>
 </html>
