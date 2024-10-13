@@ -11,12 +11,13 @@
             margin: 0;
             padding: 0;
             text-align: center;
+            background-color: #f4f4f4;
         }
         header {
             position: relative;
             width: 100%;
             height: 70vh;
-            background-image: url('IMG-20241010-WA0007.jpg'); /* تعديل المسار إلى اسم الصورة */
+            background-image: url('IMG-20241010-WA0007.jpg'); /* تأكد من أن الصورة موجودة */
             background-size: cover;
             background-position: center;
             color: white;
@@ -29,8 +30,51 @@
             font-size: 48px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        .search-container input {
+            width: 70%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-container button {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #f8b400;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .search-container button:hover {
+            background-color: #e6a800;
+        }
         .contact-info {
             margin-top: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         .contact-info p {
             font-size: 18px;
@@ -71,7 +115,18 @@
     <h1>DOAN HONEY TRADING</h1>
 </header>
 
-<div class="contact-info">
+<nav>
+    <a href="#home">الرئيسية</a>
+    <a href="products.html">المنتجات</a>
+    <a href="#contact">اتصل بنا</a>
+</nav>
+
+<div class="search-container">
+    <input type="text" placeholder="ابحث عن المنتجات..." />
+    <button type="submit">بحث</button>
+</div>
+
+<div class="contact-info" id="contact">
     <p>رقم الهاتف: +971-56-7541300</p>
     <p>البريد الإلكتروني: <a href="mailto:doanhoney7@gmail.com">doanhoney7@gmail.com</a></p>
     <p>موقع المحل: فيستيفال بلازا-دبي-الإمارات</p>
