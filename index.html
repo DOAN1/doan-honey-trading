@@ -3,42 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="DOAN HONEY TRADING - عرض منتجات العسل">
-    <title>منتجات DOAN HONEY TRADING</title>
+    <meta name="description" content="DOAN HONEY TRADING - أفضل أنواع العسل من دوعن">
+    <title>DOAN HONEY TRADING</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
             text-align: center;
         }
         header {
-            background-color: #f8b400;
-            padding: 20px;
+            position: relative;
+            width: 100%;
+            height: 70vh;
+            background-image: url('IMG-20241010-WA0007.jpg'); /* صورة المنتج 1 */
+            background-size: cover;
+            background-position: center;
             color: white;
         }
-        h1 {
-            margin: 0;
+        header h1 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
-        .products-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+        .contact-info {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6); /* خلفية شفافة للنص */
             padding: 20px;
+            border-radius: 10px;
         }
-        .product {
-            background-color: white;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            margin: 10px;
-            padding: 10px;
-            width: 300px; /* يمكن تعديل هذا العرض حسب الحاجة */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        .contact-info p, .contact-info a {
+            color: #f8b400;
+            font-size: 18px;
+            margin: 5px 0;
         }
-        .product img {
-            width: 100%;
-            border-radius: 8px;
+        .contact-info a {
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
         }
         footer {
             background-color: #333;
@@ -46,40 +55,34 @@
             padding: 10px;
             margin-top: 20px;
         }
+        .products-link {
+            margin: 20px 0;
+        }
+        .products-link a {
+            color: #f8b400;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .products-link a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>منتجات DOAN HONEY TRADING</h1>
+    <h1>DOAN HONEY TRADING</h1>
+    <div class="contact-info">
+        <p>رقم الهاتف: +971-56-7541300</p>
+        <p>البريد الإلكتروني: <a href="mailto:doanhoney7@gmail.com">doanhoney7@gmail.com</a></p>
+        <p>موقع المحل: فيستيفال بلازا-دبي-الإمارات</p>
+        <p><a href="https://www.facebook.com/profile.php?id=100076436856582&mibextid=ZbWKwL" target="_blank">Facebook</a></p>
+        <p><a href="https://www.instagram.com/doan._honey/profilecard/?igsh=aDh5cXc4bWxmOHkz" target="_blank">Instagram</a></p>
+    </div>
 </header>
 
-<div class="products-container">
-    <div class="product">
-        <img src="IMG-20241010-WA0007.jpg" alt="منتج 1">
-        <h2>منتج 1</h2>
-        <p>وصف مختصر للمنتج 1.</p>
-    </div>
-    <div class="product">
-        <img src="IMG-20241010-WA0036.jpg" alt="منتج 2">
-        <h2>منتج 2</h2>
-        <p>وصف مختصر للمنتج 2.</p>
-    </div>
-    <div class="product">
-        <img src="IMG-20241010-WA0041.jpg" alt="منتج 3">
-        <h2>منتج 3</h2>
-        <p>وصف مختصر للمنتج 3.</p>
-    </div>
-    <div class="product">
-        <img src="IMG-20241010-WA0042.jpg" alt="منتج 4">
-        <h2>منتج 4</h2>
-        <p>وصف مختصر للمنتج 4.</p>
-    </div>
-    <div class="product">
-        <img src="IMG-20241010-WA0050.jpg" alt="منتج 5">
-        <h2>منتج 5</h2>
-        <p>وصف مختصر للمنتج 5.</p>
-    </div>
+<div class="products-link">
+    <p>لمشاهدة باقي المنتجات، <a href="products.html">اضغط هنا</a>.</p>
 </div>
 
 <footer>
